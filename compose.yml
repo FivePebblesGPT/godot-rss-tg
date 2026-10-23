@@ -2,6 +2,8 @@ services:
   bot:
     build: .
     env_file: .env
+    # Run once, then exit. The local systemd timer starts one-off containers.
+    command: ["python", "-m", "godot_rss_tg", "--once"]
     environment:
       STATE_DB_PATH: /data/seen.sqlite3
     volumes:
@@ -13,7 +15,7 @@ services:
       - ALL
     security_opt:
       - no-new-privileges:true
-    restart: unless-stopped
+    restart: "no"
 
 volumes:
   bot-data:
