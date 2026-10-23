@@ -52,4 +52,4 @@ bash "$work/repo/scripts/check-rss.sh"  # Must retry the failed fingerprint.
 
 bash "$work/repo/scripts/check-rss.sh" --force
 [[ "$(wc -l < "$MOCK_DOCKER_LOG")" -eq 5 ]]
-printf 'check-rss.sh tests passed\n
+printf 'check-rss.sh tests passed\n'
