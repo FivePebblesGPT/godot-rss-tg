@@ -51,4 +51,4 @@ docker compose --project-directory "$repo_root" --file "$repo_root/compose.yml" 
 
 printf '%s\n' "$digest" >"$digest_tmp"
 mv -f -- "$digest_tmp" "$digest_file"
-printf 'Bot finished successfully; RSS fingerprint saved.\n
+printf 'Bot finished successfully; RSS fingerprint saved.\n'
