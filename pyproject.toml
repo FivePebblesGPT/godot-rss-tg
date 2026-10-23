@@ -1,0 +1,10 @@
+[project]
+name = "godot-rss-tg"
+version = "0.1.0"
+description = "Post new Godot news RSS links to a Telegram channel"
+readme = "README.md"
+requires-python = ">=3.14,<3.15"
+dependencies = []
+
+[tool.uv]
+package = false

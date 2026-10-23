@@ -1,0 +1,6 @@
+[Unit]
+Description=Publish new Godot RSS links to Telegram
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/bash %h/.local/bin/godot-rss-tg-check

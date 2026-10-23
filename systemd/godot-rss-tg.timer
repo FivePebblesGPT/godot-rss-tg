@@ -1,0 +1,13 @@
+[Unit]
+Description=Check the Godot RSS feed with minimal Docker runtime
+
+[Timer]
+# Hourly all day; every 15 minutes 14:00–18:00 Berlin time (CET/CEST).
+OnCalendar=*-*-* *:00:00 Europe/Berlin
+OnCalendar=*-*-* 14..17:15,30,45:00 Europe/Berlin
+Persistent=true
+AccuracySec=1min
+Unit=godot-rss-tg.service
+
+[Install]
+WantedBy=timers.target
